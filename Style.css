@@ -1,0 +1,125 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    width: 100%;
+    background-color: #333;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    margin: 0 10px; /* Espacio entre elementos de la lista */
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+body {
+    background: linear-gradient(to bottom, #ff7e5f, #feb47b); /* Fondo */
+    font-family: Arial, sans-serif;
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el relleno predeterminado del cuerpo */
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.table-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.table-item {
+    width: 45%; /* Ancho de cada tabla */
+    margin-bottom: 20px; /* Espacio entre tablas */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.image-fieldset {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    border: none;
+}
+
+.image-fieldset label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.image-fieldset input[type="radio"] {
+    display: none;
+}
+
+.image-fieldset img {
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.image-fieldset input[type="radio"]:checked + img {
+    transform: scale(1.1);
+    border: 2px solid #333;
+}
+
+.nav-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #555;
+}
+
+.img-standard{
+    max-height: 15rem;
+    border-radius: .5rem;
+}
